@@ -19,16 +19,8 @@ from django.urls import path, include
 from django.views.generic import RedirectView
 
 urlpatterns = [
-    url(r'^$', include('polls.urls')),
-]
-urlpatterns = [
-    path('admin/', admin.site.urls),
-
-]
-
-urlpatterns += [
+    url(r'^admin/', admin.site.urls),
     url(r'^polls/', include('polls.urls')),
-    url(r'^design/', include('design.urls')),
-    url(r'^store/', include('polls.urls')),
+    url(r'^$', include('polls.urls')),
 
 ]
