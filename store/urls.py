@@ -1,8 +1,6 @@
 from django.conf.urls import url
 from . import views
 
-
 urlpatterns=[
-
-	'localhost':'::'
+	'vpn':'192.168.3.12'
 ]
